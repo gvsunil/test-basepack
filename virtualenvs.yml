@@ -1,0 +1,18 @@
+---
+
+cloudmdm:
+  Flask: 0.10.1
+  Flask-Assets: 0.8
+  Flask-Classy: 0.6.8
+  sources:
+    - git://github.com/ojii/pymaging.git#egg=pymaging
+    - git://github.com/ojii/pymaging-png.git#egg=pymaging-png
+
+zeus-master:
+  pyzmq: 14.0.1
+
+ENV:
+  Flask: 0.10.1
+  Flask-Assets: 0.8
+  Flask-Classy: 0.6.8
+  
