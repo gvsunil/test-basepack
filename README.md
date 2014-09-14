@@ -2,13 +2,13 @@ test-basepack
 =============
 
 test base pack
-FILES
------
-repo_setup.ini: Define the apt-keys, apt-repositories and apt-sources
-repo_packages: List of packages (optionally, along with versions) to be installed as part of repo_setup
 
-repo_setup.sh: Contains the main script that sets up the packages and creates virtualenvs
---->>"Installing Packages" step in bp-create
+##FILES
+
+1. repo_setup.ini: Define the apt-keys, apt-repositories and apt-sources
+2. repo_packages: List of packages (optionally, along with versions) to be installed as part of repo_setup
+3. repo_setup.sh: Contains the main script that sets up the packages and creates virtualenvs
+**"Installing Packages" step in bp-create**
 	1. Install git, install virtualenv and virtualenvwrapper
 	2. Pull basepack
 	3. Use repo_setup.ini to setup apt-keys, reposotiries and sources
