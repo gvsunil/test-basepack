@@ -1,0 +1,2 @@
+[virtualenv_packages]
+pyzmq=14.0.1

@@ -1,0 +1,4 @@
+[virtualenv_packages]
+Flask=0.10.1
+Flask-Assets=0.8
+Flask-Classy=0.6.8
