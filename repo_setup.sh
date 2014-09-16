@@ -92,7 +92,7 @@ function read_ini()
 		if [ "$SECTION" == "apt_sources" ]
 		then
 			echo "		Adding $line to apt-sources."
-			echo $line >> /etc/apt/sources.list
+			sudo echo $line >> /etc/apt/sources.list
 		fi
 
                 if [ "$SECTION" == "apt_key_urls" ]
@@ -115,6 +115,12 @@ function read_ini()
 			sudo add-apt-repository --yes $line
 			sudo apt-get update
                 fi
+
+		if [ "$SECTION" == "apt_packages" ]
+		then
+			echo "		Installing $line..."
+			sudo apt-get -y install $line
+		fi
 
 		if [ "$SECTION" == "virtualenv_packages" ]
 		then
